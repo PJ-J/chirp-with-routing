@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import Films from './pages/Films';
+import Chirps from './pages/Chirps';
 import Projects from './pages/FilmDetails';
 import People from './pages/People';
 import PersonDetails from './pages/PersonDetails';
@@ -14,11 +14,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/films/*" element={<Films />}/>
-        <Route path="/films/:filmid/*" element={<FilmDetails />}/>
+        <Route path="/chirps/*" element={<Chirps />}/>
+        {/* <Route path="/films/:filmid/*" element={<FilmDetails />}/>
         <Route path="/people/*" element={<People />}/>
         <Route path="/people/:personid/*" element={<PersonDetails />}/>
-        
+         */}
           
         
       </Routes>
